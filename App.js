@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
-
+//import TouchBlock from './components/TouchBlock.js'
 
 export default class App extends React.Component {
   constructor(props) {
@@ -21,7 +21,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={[styles.container, {backgroundColor:this.state.bgcolor}]}>
-        <View style={styles.blockrow}>
+				<View style={styles.blockrow}>
 					<TouchableOpacity style={styles.block} onPress={(e) => this.changeBG("red")}><Text style={styles.blockt}>Red</Text></TouchableOpacity>
 					<TouchableOpacity style={styles.block} onPress={(e) => this.changeBG("blue")}><Text style={styles.blockt}>Blue</Text></TouchableOpacity>
 					<TouchableOpacity style={styles.block} onPress={(e) => this.changeBG("green")}><Text style={styles.blockt}>Green</Text></TouchableOpacity>
